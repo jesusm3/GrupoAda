@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export $DEPLOYPATH=/home/grupszle/public_html/
+    - export DEPLOYPATH=/home/grupszle/public_html/
     - /bin/cp -R /home/grupszle/repositories/GrupoAda $DEPLOYPATH
   
