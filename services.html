@@ -1,321 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viajes</title>
-    <link rel="stylesheet" href="css/style.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grupo Anodal | Catalogo</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css" />
 
-</head>
-<body>
-    
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
 
-    <section class="tank-bootstrap-header">
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">MiDestino</a>
-                <button class="navbar-toggler" type="button" 
-                data-toggle="collapse" data-target="#navbarSupportedContent">
-                    <span class="navbar-toggler-icon fa fa-bars"></span>
+        <script
+            src="https://kit.fontawesome.com/808781cc1c.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    </head>
+    <body>
+        <section class="headerUp py-2">
+            <div
+                class="container d-flex align-items-center justify-content-end"
+            >
+                <a
+                    class="headerSpan"
+                    href="https://www.instagram.com/anodaldialancalfinish/?hl=es"
+                    ><img
+                        src="imagesGA/logoInstagram.png"
+                        class="img-responsive-icon"
+                /></a>
+                <!-- <span class="headerSpan"><img src="imagesGA/logoInstagram.png" class="img-responsive-icon"></span> -->
+                <span class="headerSpan"></span>
+                <span class="headerSpan"
+                    ><span class="fa fa-phone mr-2" aria-hidden="true"></span
+                    >(+58) 414-203.27.15</span
+                >
+            </div>
+        </section>
+
+        <section class="tank-bootstrap-header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-green">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"
+                        ><img
+                            src="imagesGA/LOGO_ADA.png"
+                            class="img-responsive-logo mr-2"
+                        />Grupo Anodal</a
+                    >
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                    >
+                        <span class="navbar-toggler-icon fa fa-bars"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html"
+                                    >Notostros</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html"
+                                    >Catálogo</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"
+                                    >Contacto</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <main style="height: 100vh">
+            <div
+                class="h-100 d-flex flex-column align-items-center justify-content-center"
+            >
+                <h1 class="mb-5 text-color-dark">
+                    <strong>Descarga el Catalogo de Productos</strong>
+                </h1>
+                <button class="btn btn-primary btn-lg">
+                    <strong>
+                        <span class="fa fa-download"></span>
+                        Descargar
+                    </strong>
                 </button>
-                <div class="collapse navbar-collapse"  id="navbarSupportedContent" >
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-           </div> 
-        </nav>
-    </section>
-
-
-    <section class="tank-about-breadcrum">
-        <div class="breadcrum-bg">
-            <div class="container py-5">
-                <p><a href="index.html">Inicio</a>&nbsp; / &nbsp; Servicios</p>
             </div>
-        </div>
-    </section>
-
-
-
-    <section class="tank-features-4">
-        <div class="features py-5" id="services">
-            <div class="container py-md-3">
-                <div class="heading text-center mx-auto">
-                    <h3 class="head">Mi servicios</h3>
-                    <p class="my-3 head">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quisquam 
-                        optio quaerat sapiente excepturi veritatis minima animi explicabo dolor? Tenetur 
-                        itaque molestiae veniam eaque eius facilis natus vel temporibus perferendis!</p>
-                </div>
-                <div class="fea-gd-vv row mt-5 pt-3">
-                    <div class="float-lt feature-gd col-lg-4 col-md-6">
-                        <div class="icon">
-                            <span class="fa fa-shower"></span>
+        </main>
+        <section class="tank-footer-29-main" id="footer">
+            <div class="footer-29 text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col footer-section p-4">
+                            <img
+                                src="imagesGA/LOGO_ADA.png"
+                                style="max-width: 50%"
+                            />
                         </div>
-                        <div class="icon-info">
-                            <h5><a href="#">Regaderas</a></h5>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
-                            <a href="#" class="red mt-3">Leer mas <span class="fa fa-angle-right pl-1">
-                            </span></a>
+                        <div
+                            class="col-xs-12 col-sm-12 col-md-4 footer-section p-4"
+                        >
+                            <h5 class="text-color-dark">MENU</h5>
+                            <a class="text-color-dark footer-btn">Inicio</a>
+                            <a class="text-color-dark footer-btn">Nosotros</a>
+                            <a class="text-color-dark footer-btn">Catálogo</a>
+                            <a class="text-color-dark footer-btn">Contacto</a>
                         </div>
-                    </div>
-                    <div class="float-mid feature-gd col-lg-4 col-md-6 mt-md-0 mt-5">
-                        <div class="icon">
-                            <span class="fa fa-ship"></span>
-                        </div>
-                        <div class="icon-info">
-                            <h5><a href="#">Barco</a></h5>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
-                            <a href="#" class="red mt-3">Leer mas <span class="fa fa-angle-right pl-1">
-                            </span></a>
-                        </div>
-                    </div>
-                    <div class="float-rt feature-gd col-lg-4 col-md-6 mt-md-0 mt-5">
-                        <div class="icon">
-                            <span class="fa fa-bed"></span>
-                        </div>
-                        <div class="icon-info">
-                            <h5><a href="#">Cama</a></h5>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
-                            <a href="#" class="red mt-3">Leer mas <span class="fa fa-angle-right pl-1">
-                            </span></a>
+                        <div
+                            class="col-xs-12 col-sm-12 col-md-4 footer-section p-4"
+                        >
+                            <h5 class="text-color-dark">CONTACTO</h5>
+                            <p class="text-color-dark mb-1">
+                                <span
+                                    class="fa fa-phone mr-1"
+                                    aria-hidden="true"
+                                >
+                                </span>
+                                (+58) 414-203.27.15
+                            </p>
+                            <a
+                                class="text-color-dark footer-btn"
+                                href="https://www.instagram.com/anodaldialancalfinish/?hl=es"
+                            >
+                                <span class="fa fa-instagram mr-1"></span>
+                                Instagram
+                            </a>
                         </div>
                     </div>
-                    <div class="float-lt feature-gd col-lg-4 col-md-6 mt-5">
-                        <div class="icon">
-                            <span class="fa fa-tv"></span>
-                        </div>
-                        <div class="icon-info">
-                            <h5><a href="#">TV</a></h5>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
-                            <a href="#" class="red mt-3">Leer mas <span class="fa fa-angle-right pl-1">
-                            </span></a>
-                        </div>
-                    </div>
-                    <div class="float-mid feature-gd col-lg-4 col-md-6 mt-5">
-                        <div class="icon">
-                            <span class="fa fa-wifi"></span>
-                        </div>
-                        <div class="icon-info">
-                            <h5><a href="#">Internet</a></h5>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
-                            <a href="#" class="red mt-3">Leer mas <span class="fa fa-angle-right pl-1">
-                            </span></a>
-                        </div>
-                    </div>
-                    <div class="float-rt feature-gd col-lg-4 col-md-6 mt-5">
-                        <div class="icon">
-                            <span class="fa fa-glass"></span>
-                        </div>
-                        <div class="icon-info">
-                            <h5><a href="#">Bar</a></h5>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
-                            <a href="#" class="red mt-3">Leer mas <span class="fa fa-angle-right pl-1">
-                            </span></a>
-                        </div>
+                    <div class="bottom-copies text-center">
+                        <p class=" copy-footer-29">© 2024 Grupo Anodal</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-    <section class="tank-pricing-7" id="pricing">
-        <div class="tank-pricing-7_sur py-5">
-            <div class="container py-md-3">
-                <div class="heading text-center mx-auto">
-                    <h3 class="head">Escoge tu paquete</h3>
-                    <p class="my-3 head">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Dolorum nostrum harum aut fugiat commodi explicabo doloremque inventore reprehenderit ipsum, 
-                        optio sunt temporibus sapiente nisi, voluptatem natus aliquid velit dolor earum.</p>
-                </div>
-                <div class="row tank-pricing-7-gd-top pt-3 mt-5">
-
-                    <div class="col-lg-4 col-md-6 tank-pricing-7-gd-left">
-                        <div class="tank-pricing-7 pric-7-1">
-                            <h6>Paquete 1</h6>
-                            <div class="tank-pricing-7-bottom">
-                                <div class="ank-pricing-7-bottom-bottom">
-                                    <ul class="links">
-                                        <li class="tick-info">
-                                            harum aut fugiat commodi
-                                        </li>
-                                        <li class="tick-info">
-                                            harum aut fugiat commodi
-                                        </li>
-                                        <li class="tick-info">
-                                            harum aut fugiat commodi
-                                        </li>
-                                        <li class="tick-info">
-                                            harum aut fugiat commodi
-                                        </li>
-                                        <li class="tick-info">
-                                            harum aut fugiat commodi
-                                        </li>
-                                        <li class="tick-info">
-                                            harum aut fugiat commodi
-                                        </li>
-                                    </ul>
-                                    <h3 class="title-sub mt-4">$1000</h3>
-                                </div>
-                                <div class="buy-button text-center mt-4">
-                                    <a href="contact.html" class="btn btn-secondary btn-theme5">
-                                        <div class="anim"></div><span>Paga</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mt-md-0 mt-4 tank-pricing-7-gd-left active">
-                        <div class="tank-pricing-7 pric-7 active">
-                            <h6>Paquete 3</h6>
-                            <div class="tank-pricing-7-bottom">
-                                <div class="ank-pricing-7-bottom-bottom">
-                                    <ul class="links">
-                                        <li class="tick-info">
-                                            harum aut fugiat commodi
-                                        </li>
-                                        <li class="tick-info">
-                                            harum aut fugiat commodi
-                                        </li>
-                                        <li class="tick-info">
-                                            harum aut fugiat commodi
-                                        </li>
-                                        <li class="tick-info">
-                                            harum aut fugiat commodi
-                                        </li>
-                                        <li class="tick-info">
-                                            harum aut fugiat commodi
-                                        </li>
-                                        <li class="tick-info">
-                                            harum aut fugiat commodi
-                                        </li>
-                                    </ul>
-                                    <h3 class="title-sub mt-4">$2500</h3>
-                                </div>
-                                <div class="buy-button text-center mt-4">
-                                    <a href="contact.html" class="btn btn-secondary btn-theme5 active">
-                                        <div class="anim"></div><span>Paga</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mt-lg-0 mt-4 tank-pricing-7-gd-left ">
-                        <div class="tank-pricing-7 pric-7-2 ">
-                            <h6>Paquete 2</h6>
-                            <div class="tank-pricing-7-bottom">
-                                <div class="ank-pricing-7-bottom-bottom">
-                                    <ul class="links">
-                                        <li class="tick-info">
-                                            harum aut fugiat commodi
-                                        </li>
-                                        <li class="tick-info">
-                                            harum aut fugiat commodi
-                                        </li>
-                                        <li class="tick-info">
-                                            harum aut fugiat commodi
-                                        </li>
-                                        <li class="tick-info">
-                                            harum aut fugiat commodi
-                                        </li>
-                                        <li class="tick-info">
-                                            harum aut fugiat commodi
-                                        </li>
-                                        <li class="tick-info">
-                                            harum aut fugiat commodi
-                                        </li>
-                                    </ul>
-                                    <h3 class="title-sub mt-4">$2000</h3>
-                                </div>
-                                <div class="buy-button text-center mt-4">
-                                    <a href="contact.html" class="btn btn-secondary btn-theme5">
-                                        <div class="anim"></div><span>Paga</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="tank-footer-29-main" id="footer">
-        <div class="footer-29 text-center">
-            <div class="container">
-                <div class="main-social-footer-29">
-                    <a href="#" class="facebook"><span class="fa fa-facebook"></span></a>
-                    <a href="#" class="twitter"><span class="fa fa-twitter"></span></a>
-                    <a href="#" class="instagram"><span class="fa fa-instagram"></span></a>
-                    <a href="#" class="google-plus"><span class="fa fa-google-plus"></span></a>
-                    <a href="#" class="linkedin"><span class="fa fa-linkedin"></span></a>
-                </div>
-                <div class="bottom-copies text-center">
-                    <p class="copy-footer-29">2020 reservaciones <a href="#">tank</a></p>
-                </div>
-            </div>
-        </div>
-        <button onclick="topFunction()" id="movetop" title="Go to top">
-        <span class="fa fa-angle-up"></span>
-        </button>
-            <script>
-                window.onscroll = function() {
-                    scrollFunction()
-                };
-
-                function scrollFunction() {
-                    if(document.body.scrollTop > 20 || document.documentElement. scrollTop > 20) {
-                        document.getElementById("movetop").style.display = "block";
-                    }else{
-                        document.getElementById("movetop").style.display = "none";
-                    }
+        <script>
+            var map = new google.maps.Map(
+                document.getElementById("map-direction"),
+                {
+                    center: { lat: -34.397, lng: 150.644 },
+                    zoom: 8,
                 }
+            );
 
-                function topFunction () {
-                    document.body.scrollTop = 0;
-                    document.documentElement.scrollTop = 0;
-                }
-            </script>
-    </section>
+            var searchBox = new google.maps.places.SearchBox(
+                document.getElementById("map-direction")
+            );
 
-    
+            map.controls[google.maps.ControlPosition.TOP_LEFT].push(searchBox);
+        </script>
 
+        <script>
+            $(function () {
+                $(".navbar-toggler").click(function () {
+                    $("body").toggleClass("noscroll");
+                });
+            });
+        </script>
 
-    <script>
-        $(function(){
-            $('.navbar-toggler').click(function(){
-                $('body').toggleClass('noscroll');
-            })
-
-        });
-    </script>
-
-
-
-
-
-    
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-
-</body>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>

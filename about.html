@@ -1,240 +1,340 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viajes</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grupo Anodal | Nosotros</title>
 
-    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
 
-</head>
-<body>
+        <script
+            src="https://kit.fontawesome.com/808781cc1c.js"
+            crossorigin="anonymous"
+        ></script>
 
-    <section class="tank-bootstrap-header">
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">MiDestino</a>
-                <button class="navbar-toggler" type="button" 
-                data-toggle="collapse" data-target="#navbarSupportedContent">
-                    <span class="navbar-toggler-icon fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse"  id="navbarSupportedContent" >
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-           </div> 
-        </nav>
-    </section>
-
-
-    <section class="tank-about-breadcrum">
-        <div class="breadcrum-bg">
-            <div class="container py-5">
-                <p><a href="index.html">Inicio</a>&nbsp; / &nbsp; Nosotros</p>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    </head>
+    <body>
+        <section class="headerUp py-2">
+            <div
+                class="container d-flex align-items-center justify-content-end"
+            >
+                <a
+                    class="headerSpan"
+                    href="https://www.instagram.com/anodaldialancalfinish/?hl=es"
+                    ><img
+                        src="imagesGA/logoInstagram.png"
+                        class="img-responsive-icon"
+                /></a>
+                <!-- <span class="headerSpan"><img src="imagesGA/logoInstagram.png" class="img-responsive-icon"></span> -->
+                <span class="headerSpan"></span>
+                <span class="headerSpan"
+                    ><span class="fa fa-phone mr-2" aria-hidden="true"></span
+                    >(+58) 414-203.27.15</span
+                >
             </div>
-        </div>
-    </section>
+        </section>
 
-
-    <div class="tank-content-photo-5 py-5" id="about">
-        <div class="content-main pt-lg-5 pt-md-3 pd-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 content-photo">
-                        <a href="#"><img src="images/22.jpg" class="img-fluid"></a>
+        <section class="tank-bootstrap-header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-green">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"
+                        ><img
+                            src="imagesGA/LOGO_ADA.png"
+                            class="img-responsive-logo mr-2"
+                        />Grupo Anodal</a
+                    >
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                    >
+                        <span class="navbar-toggler-icon fa fa-bars"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html"
+                                    >Notostros</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html"
+                                    >Catálogo</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"
+                                    >Contacto</a
+                                >
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-lg-7 content-left mt-lg-0 mt-5 pl-lg-5">
-                        <h3>Elige tu hotel</h3>
-                        <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing 
-                            elit. Ab, earum eum. Cum consequatur numquam, illo omnis laboriosam 
-                            sit neque cumque alias 
-                            elit. Ab, earum eum. Cum consequatur numquam, illo omnis laboriosam 
-                            sit neque cumque alias
-                            repellendus facilis corrupti odit quia ex et quaerat perferendis.</p>
-                            <a href="services.html" class="btn-theme2 btn mt-lg-5">Costos</a>
-                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </nav>
+        </section>
 
-
-    <section id="services-1" class="py-5">
-        <div class="container py-lg-3">
-            <div class="heading text-center mx-auto">
-                <h3 class="head">Bienvenidos</h3>
-                <p class="my-3 head">Lorem ipsum dolor, sit amet consectetur adipisicing 
-                    elit. Ab, earum eum. Cum consequatur numquam, illo omnis laboriosam 
-                    sit neque cumque alias </p>
-            </div>
-            <div class="row mt-lg-5">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="box-wrap">
-                        <div class="icon">
-                            <span class="fa fa-archive"></span>
-                            <h4><a href="services.html">Paquete 1</a> </h4>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
-                                elit. Ab, earum eum</p>
+        <main>
+            <section style="padding-top: 120px" id="about">
+                <article
+                    class="service-row d-flex justify-content-center align-items-center"
+                    id="pintura"
+                >
+                    <div class="row">
+                        <div
+                            class="col-sm-12 col-md-6 p-0 d-flex justify-content-center align-items-center"
+                        >
+                            <img
+                                src="./imagesGA/about_1.jpeg"
+                                style="max-height: 500px;"
+                                class="img-responsive m-5"
+                                alt="anodizado"
+                            />
+                        </div>
+                        <div
+                            class="p-5 col-sm-12 col-md-6 d-flex align-items-center flex-column justify-content-center"
+                        >
+                            <h3
+                                class="description-title text-color-dark bold mb-4"
+                            >
+                                <strong>Reseña Histórica</strong>
+                            </h3>
+                            Planta de Pintura
+                            <p class="description-text text-color-dark">
+                                La empresa Anodal C.A fue fundada en 1971 con
+                                tecnología italiana y suiza por el SR. Robert
+                                Meyer y el Sr Alonso Rivas.
+                            </p>
+                            <p class="description-text text-color-dark">
+                                Al transcursos de los años por la necesidad de
+                                crecimiento y aumento de clientes , fundaron las
+                                distribuidora de Aluminio Anodizado C.A Dialanca
+                                y luego en los años 1998 para aumentar la línea
+                                de producción en los acabados de aluminio fue
+                                creada la línea de pintura electroestática.
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="box-wrap">
-                        <div class="icon">
-                            <span class="fa fa-archive"></span>
-                            <h4><a href="services.html">Paquete 2</a> </h4>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
-                                elit. Ab, earum eum</p>
+                </article>
+                <article
+                    class="service-row d-flex justify-content-center align-items-center"
+                    id="anodizado"
+                >
+                    <div class="row">
+                        <div
+                            class="p-5 col-sm-12 col-md-6 d-flex align-items-center flex-column justify-content-center"
+                        >
+                            <h3
+                                class="description-title bold mb-4 text-color-dark"
+                            >
+                                <strong>Misión</strong>
+                            </h3>
+                            <p class="description-text text-color-dark">
+                                Ofrecer la excelencia en servicios en el acabado
+                                final del aluminio, bien sea anodizado y pintura
+                                electroestática en polvo, garantizando la
+                                uniformidad en el color y la durabilidad en el
+                                tiempo. Nuestros esfuerzos están dirigidos al
+                                crecimiento de la organización y la satisfacción
+                                de nuestros clientes.
+                            </p>
+                        </div>
+                        <div
+                            class="col-sm-12 col-md-6 p-0 d-flex align-items-center flex-column justify-content-center"
+                        >
+                            <img
+                                src="./imagesGA/about_2.jpg"
+                                style="max-height: 500px;"
+                                class="img-responsive m-5"
+                                alt="anodizado"
+                            />
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="box-wrap">
-                        <div class="icon">
-                            <span class="fa fa-archive"></span>
-                            <h4><a href="services.html">Paquete 3</a> </h4>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
-                                elit. Ab, earum eum</p>
+                </article>
+                <article
+                    class="service-row d-flex justify-content-center align-items-center"
+                    id="pintura"
+                >
+                    <div class="row">
+                        <div
+                            class="col-sm-12 col-md-6 p-0 d-flex justify-content-center align-items-center"
+                        >
+                            <img
+                                src="./imagesGA/about_3.jpg"
+                                style="max-height: 500px;"
+                                class="img-responsive ml-5"
+                                alt="anodizado"
+                            />
                         </div>
+                        <div
+                            class="p-5 col-sm-12 col-md-6 d-flex align-items-center flex-column justify-content-center"
+                        >
+                            <h3
+                                class="description-title text-color-dark bold mb-4"
+                            >
+                                <strong>Visión</strong>
+                            </h3>
+                            <p class="description-text text-color-dark">
+                                Lograr el liderazgo a nivel nacional en la
+                                comercialización de aluminio para así satisfacer
+                                plenamente las necesidades del cliente
+                                garantizándole un pretratamiento de su material
+                                que garantiza durabilidad por mas de 20 años.
+                            </p>
+                            <p class="description-text text-color-dark">
+                                Desarrollando actividades mediante la ejecución
+                                de programas, evaluados, y control de excelente
+                                calidad
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="service-row d-flex justify-content-center align-items-center"
+                    id="anodizado"
+                >
+                    <div class="row">
+                        <div
+                            class="p-5 col-sm-12 col-md-6 d-flex align-items-center flex-column justify-content-center"
+                        >
+                            <h3
+                                class="description-title bold mb-4 text-color-dark"
+                            >
+                                <strong>Política</strong>
+                            </h3>
+                            <p class="description-text text-color-dark">
+                                Mantener la calidad del acabado final según
+                                normas de calidad internacionales, por ello se
+                                encuentra como una de las mejores en el mercado.
+                            </p>
+                            <p class="description-text text-color-dark">
+                                Los materiales que ofrece el grupo anodal es
+                                perfileria de aluminio, para los distintos tipos
+                                de ventanas, puertas, vidrieras, barandas, cielo
+                                raso y revestimiento, los cuales son destinados
+                                a la construcción de viviendas, centro
+                                comerciales, aeropuertos, y cualquier obra civil
+                            </p>
+                        </div>
+                        <div
+                            class="col-sm-12 col-md-6 p-0 d-flex align-items-center flex-column justify-content-center"
+                        >
+                            <img
+                                src="./imagesGA/about_4.jpg"
+                                style="max-height: 500px;"
+                                class="img-responsive m-5"
+                                alt="anodizado"
+                            />
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <section class="tank-footer-29-main" id="footer">
+            <div class="footer-29 text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col footer-section p-4">
+                            <img
+                                src="imagesGA/LOGO_ADA.png"
+                                style="max-width: 50%"
+                            />
+                        </div>
+                        <div
+                            class="col-xs-12 col-sm-12 col-md-4 footer-section p-4"
+                        >
+                            <h5 class="text-color-dark">MENU</h5>
+                            <a class="text-color-dark footer-btn">Inicio</a>
+                            <a class="text-color-dark footer-btn">Nosotros</a>
+                            <a class="text-color-dark footer-btn">Catálogo</a>
+                            <a class="text-color-dark footer-btn">Contacto</a>
+                        </div>
+                        <div
+                            class="col-xs-12 col-sm-12 col-md-4 footer-section p-4"
+                        >
+                            <h5 class="text-color-dark">CONTACTO</h5>
+                            <p class="text-color-dark mb-1">
+                                <span
+                                    class="fa fa-phone mr-1"
+                                    aria-hidden="true"
+                                >
+                                </span>
+                                (+58) 414-203.27.15
+                            </p>
+                            <a
+                                class="text-color-dark footer-btn"
+                                href="https://www.instagram.com/anodaldialancalfinish/?hl=es"
+                            >
+                                <span class="fa fa-instagram mr-1"></span>
+                                Instagram
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bottom-copies text-center">
+                        <p class="copy-footer-29">© 2024 Grupo Anodal</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-
-    <section class="tank-specifications-9">
-        <div class="main-t py-5" id="stats">
-            <div class="container py-md-3">
-                <div class="main-cont-wthree-fea row">
-                    <div class="grids-speci1 col-lg-3 col-6">
-                        <div class="spec-2 text-center">
-                            <h3 class="title-spe">40</h3>
-                            <p>Hoteles</p>
-                        </div>
-                    </div>
-                    <div class="grids-speci1 midd-eff-spe col-lg-3 col-6">
-                        <div class="spec-2 text-center">
-                            <h3 class="title-spe">808</h3>
-                            <p>Cuartos</p>
-                        </div>
-                    </div>
-                    <div class="grids-speci1 las-but col-lg-3 col-6 mt-lg-0 mt-4">
-                        <div class="spec-2 text-center">
-                            <h3 class="title-spe">50</h3>
-                            <p>Playas</p>
-                        </div>
-                    </div>
-                    <div class="grids-speci1 las-t col-lg-3 col-6 mt-lg-0 mt-4">
-                        <div class="spec-2 text-center">
-                            <h3 class="title-spe">20</h3>
-                            <p>Rios</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="tank-subscribe" id="subscribe">
-        <div class="main-host py-5 text-center">
-            <div class="container py-lg3">
-                <div class="grids-forms">
-
-                    <div class="main-midd">
-                        <h3 class="global-title mx-auto">Pide informes</h3>
-                    </div>
-
-                    <div class="main-midd-2">
-                        <form action="#" class="rightside-form">
-                            <input type="email" placeholder="Enter email">
-                            <button type="submit" class="btn">Enviar</button>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <section class="tank-footer-29-main" id="footer">
-        <div class="footer-29 text-center">
-            <div class="container">
-                <div class="main-social-footer-29">
-                    <a href="#" class="facebook"><span class="fa fa-facebook"></span></a>
-                    <a href="#" class="twitter"><span class="fa fa-twitter"></span></a>
-                    <a href="#" class="instagram"><span class="fa fa-instagram"></span></a>
-                    <a href="#" class="google-plus"><span class="fa fa-google-plus"></span></a>
-                    <a href="#" class="linkedin"><span class="fa fa-linkedin"></span></a>
-                </div>
-                <div class="bottom-copies text-center">
-                    <p class="copy-footer-29">2020 reservaciones <a href="#">tank</a></p>
-                </div>
-            </div>
-        </div>
-        <button onclick="topFunction()" id="movetop" title="Go to top">
-        <span class="fa fa-angle-up"></span>
-        </button>
-            <script>
-                window.onscroll = function() {
-                    scrollFunction()
-                };
-
-                function scrollFunction() {
-                    if(document.body.scrollTop > 20 || document.documentElement. scrollTop > 20) {
-                        document.getElementById("movetop").style.display = "block";
-                    }else{
-                        document.getElementById("movetop").style.display = "none";
-                    }
+        <script>
+            var map = new google.maps.Map(
+                document.getElementById("map-direction"),
+                {
+                    center: { lat: -34.397, lng: 150.644 },
+                    zoom: 8,
                 }
+            );
 
-                function topFunction () {
-                    document.body.scrollTop = 0;
-                    document.documentElement.scrollTop = 0;
-                }
-            </script>
-    </section>
+            var searchBox = new google.maps.places.SearchBox(
+                document.getElementById("map-direction")
+            );
 
-    
+            map.controls[google.maps.ControlPosition.TOP_LEFT].push(searchBox);
+        </script>
 
+        <script>
+            $(function () {
+                $(".navbar-toggler").click(function () {
+                    $("body").toggleClass("noscroll");
+                });
+            });
+        </script>
 
-    <script>
-        $(function(){
-            $('.navbar-toggler').click(function(){
-                $('body').toggleClass('noscroll');
-            })
-
-        });
-    </script>
-
-
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-
-
-    
-</body>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
