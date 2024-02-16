@@ -96,21 +96,26 @@
 
         <main id="service">
             <div
-                class="mt-5 h-100 d-flex flex-column align-items-center justify-content-center"
+                class="mt-5 d-flex flex-column align-items-center justify-content-center"
+                style="height: 800px"
             >
                 <h1 class="mb-5 text-color-dark">
-                    <strong>Catalogo de Productos</strong>
+                    <strong>Catálogo de Productos</strong>
                 </h1>
-                <button class="btn btn-primary btn-lg mb-5">
-                    <strong>
-                        <span class="fa fa-download"></span>
-                        Descargar
-                    </strong>
-                </button>
+                <a href="./catalogo.pdf" target="_blank">
+                    <button class="btn btn-primary btn-lg mb-5">
+                        <strong>
+                            <span class="fa fa-download"></span>
+                            Descargar
+                        </strong>
+                    </button>
+                </a>
                 <iframe
+                    class="mb-3"
                     src="./catalogo.pdf"
-                    width="500px"
-                    height="800px"
+                    width="100%"
+                    height="100%"
+                    style="max-width: 500px; max-height: 700px;"
                 ></iframe>
             </div>
         </main>
