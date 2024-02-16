@@ -12,3 +12,4 @@ deployment:
     - /bin/cp /home/grupszle/repositories/GrupoAda/contact.html $DEPLOYPATH
     - /bin/cp /home/grupszle/repositories/GrupoAda/index.html $DEPLOYPATH
     - /bin/cp /home/grupszle/repositories/GrupoAda/services.html $DEPLOYPATH
+    - /bin/cp /home/grupszle/repositories/GrupoAda/catalogo.pdf $DEPLOYPATH
